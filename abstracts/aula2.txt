@@ -1,0 +1,25 @@
+[AULA2]
+
+Nessa aula aprendemos como:
+
+    > escrever uma servlet que atende apenas GET ou POST
+    > ler parâmetros da requisição dentro da servlet
+    > criar um formulário HTML usando as tags form e input
+    > enviando os dados pelo formulário através do POST
+    > diferença entre GET e POST
+
+Sobre GET e POST:
+
+1) GET foi pensado para acessar algum recurso.
+3) POST foi pensado para alterar ou criar algum recurso.
+5) GET gera problemas quando precisamos enviar muitas informações.
+
+O método doPost:
+
+ - recebe os mesmos parâmetro do método service. Os métodos service e doPost tem a mesma assinatura (mesmo retorno, 
+mesmos parâmetros, mesmas exceções).
+ - só é capaz de lidar com requisições do tipo post. O método doPost recebe os mesmos parâmetros do método service.
+
+O método service de uma HttpServlet:
+
+- Lida com requisições do tipo get e do tipo post.
