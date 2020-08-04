@@ -1,0 +1,22 @@
+[AULA 1]
+
+Nessa aula aprendemos que:
+
+    > Apache Tomcat ou apenas Tomcat é um servidor web em Java
+    > Tomcat entende o protocolo HTTP e roda por padrão no http://localhost:8080
+    > O projeto Java faz parte da URL, no nosso caso: http://localhost:8080/gerenciador
+    > Uma aplicação web Java pode ter páginas HTML
+    > Uma servlet é um objeto Java que podemos chamar a partir de uma requisição HTTP
+    > Para mapear a URL para uma servlet usamos a anotação @WebServlet
+    > Uma servlet deve estender a classe HttpServlet e sobrescrever um determinado método (por exemplo service)
+
+
+O Tomcat sabe gerar HTML, entende o protocolo HTTP e é um servidor web.
+
+A anotação @WebServlet marca a classe como uma servlet e além disso a registra a URL.  Não basta estender a classe HttpServlet, também devemos configurar a URL 
+através da anotação @WebServlet.
+
+O que é verdade sobre uma Servlet?
+- É mapeado para uma URL, para tal existe a anotação @WebServlet
+- É um objeto, por isso criamos uma classe. No entanto não criamos esse objeto, pois isso é a tarefa do Tomcat.
+- Pode ser chamado através do protocolo HTTP, isso é a essência da servlet, ser um objeto que pode ser chamado pelo protocolo HTTP.
