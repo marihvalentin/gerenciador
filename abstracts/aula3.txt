@@ -1,0 +1,22 @@
+[AULA 3]
+
+Nessa aula preparamos o modelo da nossa aplicação. O modelo ou domínio são as classes que representam o mundo real, aquilo que o cliente 
+ou usuário da aplicação define.
+
+Para descobrir quais são as classes e funcionalidades do modelo o analista de requisitos conversa com o cliente e documenta cada funcionalidade.
+
+Nesse curso falaremos menos sobre o modelo e a camada de persistência como JDBC ou JPA. Nós vamos focar nas Servlets, claro!
+
+
+***O retorno de getParameter é sempre uma string.***
+
+
+
+Você gostaria de implementar uma nova funcionalidade para mostrar os dados de uma empresa.
+Qual método HTTP você usaria?
+ - GET, pois estaremos acessando dados e não alterando/cadastrando;
+
+
+Aprendemos a lidar com parâmetros de requisições que são sempre tratados como texto por uma HttpServletRequest. Porém, podemos aplicar 
+padrões que visam a manutenção e legibilidade do nosso código. 
+ - Criar classes de Negócio ajudam na manutenção e legibilidade do nosso código.
