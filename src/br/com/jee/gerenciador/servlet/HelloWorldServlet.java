@@ -11,10 +11,11 @@ import javax.servlet.http.HttpServletResponse;
 
 //hello
 @WebServlet(urlPatterns = "/hello")
-public class HelloWorld extends HttpServlet
+public class HelloWorldServlet extends HttpServlet
 {
   @Override
-  protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException
+  protected void service(HttpServletRequest req, HttpServletResponse resp) 
+		  throws IOException
   {
 	  PrintWriter out = resp.getWriter();
 	  out.println("<html>");
