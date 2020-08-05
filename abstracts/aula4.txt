@@ -1,0 +1,22 @@
+[AULA 4]
+
+Nessa aula começamos a separar as responsabilidades entre servlet e JSP e aprendemos:
+
+    > JSP significa Java Server Pages
+    > JSP é uma página automaticamente processada pelo Tomcat
+    > Para gerar HTML dinamicamente no JSP usamos Scriplets
+    > Um scriptlet <% %> é um código Java dentro do HTML
+    > Um scriptlet só funciona em uma página JSP
+    > Usamos o RequestDispatcher para chamar um JSP a partir da servlet
+    > Obtemos o RequestDispatcher a partir do HttpServletRequest
+    > Usamos a requisição para colocar ou pegar um atributo (setAttribute(.., ..) ou getAttribute(..))
+
+O JSP:
+
+ - É uma tecnologia que renderiza as páginas no servidor antes de enviá-la. Todo o código (scriptlet) é executado no servidor 
+antes de enviar a resposta para o navegador.
+
+O RequestDispatcher: 
+
+ - Permite, a partir de uma servlet, chamar um JSP.
+ - É obtido de um HttpServletRequest através do método getRequestDispatcher().
