@@ -12,7 +12,8 @@
 		<ul>
 		<% 
 			List<Company> lista = (List<Company>)request.getAttribute("empresas");
-			if( lista == null){
+			if( lista == null)
+			{
 				%> Lista nula <% 
 			} 
 			else 
