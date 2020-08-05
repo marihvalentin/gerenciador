@@ -3,6 +3,8 @@ package br.com.jee.gerenciador.servlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -20,18 +22,11 @@ public class CompanyListServlet extends HttpServlet
 	{
 		Database banco = new Database();
 		List<Company> lista = banco.getEmpresas();
-		PrintWriter out = response.getWriter();
+		request.setAttribute("empresas", lista);
 		
-		out.println("<html>");
-		out.println("<body>");
-		out.println("<ul>");
-		for (Company empresa : lista) 
-		{
-			out.println("<li>" + empresa.getNome() + "</li>");
-		}
-		out.println("</ul>");
-		out.println("</body>");
-		out.println("</html>");
+		RequestDispatcher rd = request.getRequestDispatcher("/CompaniesList.jsp");
+		rd.forward(request, response);
+		
 	}
 
 }
